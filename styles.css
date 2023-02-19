@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=EB+Garamond:wght@400;500;700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*
+Primary
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+Gradients
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+Neutral
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	background-color: hsl(221, 100%, 96%);
+}
+
+main {
+	min-height: 95dvh;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contain {
+	display: flex;
+	height: 450px;
+	width: 638px;
+	background-color: hsl(0, 0%, 100%);
+	border: none;
+	border-radius: 2em;
+}
+
+.contain-result {
+	flex: 1;		
+	background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%)); /* Light slate blue */
+	border: none;
+	border-radius: 2em;
+	text-align: center;
+}
+
+.contain-result-info {
+	padding: 2em 3em;
+
+}
+
+.contain-result-info h2 {
+	color: hsl(241, 100%, 89%); /* - Light lavender */
+	margin: 0 0 1.25em 0;
+}
+
+.contain-result-info-score {
+	display: flex;
+	flex-direction: column;
+	height: 150px;
+	width: 150px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border: none;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(252, 100%, 67%, .1));
+}
+
+.contain-result-info-score h1 {
+	font-size: 3em;
+	color: hsl(0, 0%, 100%); /* white */
+}
+
+.contain-result-info-name h1 {
+	color: hsl(0, 0%, 100%); /* white */
+	margin: .75em 0 .75em 0;
+}
+
+.contain-result-info p {
+	color: hsl(241, 100%, 89%);
+}
+
+.contain-result-info-score p {
+	color: hsl(241, 100%, 89%);
+}
+
+.contain-summary {
+	flex: 1;
+}
+
+footer {
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px dashed hsl(234, 85%, 45%); 
+	font-size: 11px;
+	text-align: center;
+}
+
+footer a {
+	color: hsl(228, 45%, 44%);
+}
