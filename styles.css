@@ -258,6 +258,10 @@ main {
 	color: hsla(234, 85%, 45%, 1);
 }
 
+.contain-summary-info-items span {
+	float: right;
+}
+
 footer {
 	width: 100%;
 	padding: 10px 0;
