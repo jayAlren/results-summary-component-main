@@ -266,6 +266,7 @@ main {
 
 .float-right .float-right-100 {
 	color: gray;
+	padding: 0 0 0 5px;
 }
 
 .contain-summary-button {
@@ -281,7 +282,7 @@ main {
 }
 
 .contain-summary-button:hover {
-	background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(252, 100%, 67%, 1));
+	background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
 	cursor: pointer;
 }
 
@@ -302,5 +303,26 @@ footer a {
 		flex-direction: column;
 		height: auto;
 		width: 320px;
+	}
+
+	.contain-result-info h2 {
+		font-size: 1.25em;
+	}
+
+	.contain-result-info-name h1 {
+		font-size: 1.5em;
+	}
+
+	.contain-result-info p {
+		font-size: .85em;
+	}
+
+	.contain-summary-info h2 {
+		font-size: 1.25em;
+		color: hsl(224, 30%, 27%);
+	}
+
+	.palette {
+		display: none;
 	}
 }
